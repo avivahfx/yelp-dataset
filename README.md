@@ -1,2 +1,5 @@
-# yelp-dataset
-Including both tools (convert json to csv files) and analysis for yelp dataset. 
+# Yelp Dataset
+
+A small individual project.
+
+[Completed] 1. python code to convert yelp json files to csv files.
