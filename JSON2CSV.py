@@ -23,7 +23,6 @@ def json_parser(filename):
             df_temp = pd.DataFrame(columns = columns, data = value_list)
             df = df.append(df_temp)
             value_list = []
-            print(len(df))
 
     df_temp = pd.DataFrame(columns = columns, data = value_list)
     df = df.append(df_temp)
@@ -38,6 +37,8 @@ def json_parser(filename):
 # if yelp change filename, you can change/add it here.
 json_parser("data/yelp_academic_dataset_tip.json")
 json_parser("data/yelp_academic_dataset_business.json")
-json_parser("data/yelp_academic_dataset_review.json")
+
+# this file may cost long time, others are pretty quick
+json_parser("data/yelp_academic_dataset_review.json") 
 json_parser("data/yelp_academic_dataset_checkin.json")
 json_parser("data/yelp_academic_dataset_user.json")
